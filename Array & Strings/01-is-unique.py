@@ -1,7 +1,8 @@
-'''
-return true if the string doesn't have duplicate characters
-return false if the string has duplicate character by myself. 
-'''
+# Method: Using Dict
+# Time: O(n)
+# Space: O(n)
+
+# Implement an algorithm to determine if a string has all unique characters. What if you cannot use additional data structures?
 def isUnique(string):
     characters = {}
     for character in string:
@@ -10,6 +11,6 @@ def isUnique(string):
         characters[character]=True
     return True
 
-print(isUnique('asdddwef'))
+print(isUnique('asdwefd'))
 print(isUnique('asdfght'))
 
